@@ -1,0 +1,12 @@
+name: Chris Howes
+url: http://chrishow.es
+description: A stylish blog using the Solarized color palette
+
+permalink: /:year/:month/:day/:title/
+paginate: 10
+
+gems: [jekyll-paginate]
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+
+tag_page_layout: tag_page
+tag_page_dir: tag
