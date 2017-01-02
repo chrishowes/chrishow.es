@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require 'date'
+
+File.open "_posts/#{Time.now.strftime("%Y-%m-%d")}-#{ARGV[0]}.md", "w" do |f|
+  f.write "---\n"
+  f.write "layout: post\n"
+  f.write "title:  #{ARGV[0]}\n"
+  f.write "date:   #{Time.now.strftime("%Y-%m-%d %H:%M:%S")}\n"
+  f.write "tags:   \n"
+  f.write "---\n\n"
+end
